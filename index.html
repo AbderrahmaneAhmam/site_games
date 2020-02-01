@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game on</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav_top">
+            <ul class="nav_l">
+                <li class="lk"><a class="logo" href="#"><img src="img/lg.png"></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#con_2">CONTACT</a></li>
+                <li><a href="#con_1">NEWS</a></li>
+                <li><a href="#">GROUPS START</a></li>
+                <li><a href="#">TORNE NOW</a></li>
+            </ul>
+            <div class="Loginicon">
+                <p><a onclick="myclick1()" href="#"><i class="fas fa-sign-in-alt"></i></a></p>
+                <p><a href="#" onclick="myclick2()"><i class="fas fa-plus-circle"></i></a></p>
+            </div>
+        </nav>
+        <div class="fullscreen-video-wrap">
+            <video class="video_bg" src="assest/video/Legends%20Never%20Die%20(ft.%20Against%20The%20Current)%20-%20Worlds%202017%20-%20League%20of%20Legends.webm" autoplay loop muted></video>
+        </div>
+        <div class="tow_btn">
+            <p><a class="btn" id="login" onclick="myclick1()">Login</a></p>
+            <p><a class="btn" href="#" onclick="myclick2()">registre</a></p>
+        </div>
+        <div class="txt_title">
+            <h1> The new world <br /> of gamming <br /> groups</h1>
+        </div>
+    </header>
+    <section class="login_temp" id="display_change1">        
+        <div class="icon_account">
+
+        </div>
+        <form action="" class="needs-validation">
+            <table>
+            <tr>
+                <td><i class="fas fa-user"></i></td>
+            </tr>
+            <tr>
+                <td><input class="txt" type="email" placeholder="Email" required></td>
+            </tr>
+            <tr>
+                <td><input class="txt" type="password" placeholder="Password" required></td>
+            </tr>
+            <tr class="check">
+                <td><input type="checkbox"><span>Remember me</span></td>
+            </tr>
+            <tr>
+                <td><input class="btn btn_login" type="submit" value="Login" required></td>
+            </tr>
+        </table>
+        </form>
+        <div class="helper">
+            <!--Help return account-->
+            <div class="forgot_pass">
+                <a href="#">Forgot email?</a>
+            </div>
+            <div class="create_acc">
+                <a href="#">Create account</a>
+            </div>
+        </div>
+        <div class="out_login">
+            <a onclick="click_close1()" href="#Home"><i class="fas fa-times"></i></a>
+        </div>
+    </section>
+    <section class="login_temp" id="display_change2">
+        <div class="icon_account">
+
+        </div>
+        <form action="">
+            <table>
+                <tr>                    
+                    <td><input type="text" class="txt" pattern="\w+" placeholder="Nom" title="Nom se compose a des caractere" required></td>
+                </tr>
+                <tr>                    
+                    <td><input type="text" class="txt" pattern="\w+" placeholder="Prenom" title="Prenom se compose a des caractere" required></td>
+                </tr>
+                <tr>                    
+                    <td><input type="email" class="txt" placeholder="Name@host.domain" title="Email doit au forma name@host.com" required></td>
+                </tr>
+                <tr>                    
+                    <td><input type="password" class="txt" id="pwd1" placeholder="Mote de passe" title="Password" required></td>
+                </tr>
+                <tr>                    
+                    <td><input type="password" class="txt" id="pwd2" placeholder=" Confirmation Mote de passe" title="Password" required></td>
+                </tr>
+                <tr>
+                    <td><input class="btn btn_login" type="submit" value="Inscrire"></td>
+                </tr>
+        </table>
+        </form>        
+        <div class="out_login">
+            <a onclick="click_close2()" href="#Home"><i class="fas fa-times"></i></a>
+        </div>
+    </section>
+    <section id="con_1">
+        <div class="container1">        
+            <div class="middle">
+            <div class="menu">
+                <li class="item" id='profile'>
+                <a href="#profile" class="btn"><i class="fab fa-xbox"></i>Streaming</a>
+                <div class="smenu">
+                    <a href="#">Posts</a>
+                    <a href="#">Picture</a>
+                </div>
+                </li>
+        
+                <li class="item" id="messages">
+                <a href="#messages" class="btn"><i class="fas fa-gamepad"></i>Playing</a>
+                <div class="smenu">
+                    <a href="#">new</a>
+                    <a href="#">Sent</a>
+                    <a href="#">Spam</a>
+                </div>
+                </li>
+        
+                <li class="item" id="settings">
+                <a href="#settings" class="btn"><i class="fas fa-chess"></i>Game on</a>
+                <div class="smenu">
+                    <a href="#">Password</a>
+                    <a href="#">Language</a>
+                </div>
+                </li>
+        
+                <li class="item">
+                <a class="btn" href="#"><i class="fas fa-hand-scissors"></i>One vs One</a>
+                </li>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="con_2">
+        <div class="container2">            
+            <div class="dom">
+                    <img src="img/4.png" alt="">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><h1>CONTACT  US</h1></td>
+                        </tr>
+                        <tr>
+                            <td><input class="txt" type="Email" placeholder="Email" ></td>
+                        </tr>
+                        <tr>
+                            <td><textarea class="txt" name="" id="txt" placeholder="Message"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn_login" type="submit">Envoyer</button></td>
+                        </tr>
+                    </table>
+                                        
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="info">
+            <h3>Game on</h3>
+            <p>game on streaming 2019&copy;Copyright</p>
+            <ul>
+                <li><a href="#">Polycie</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Right</a></li>
+            </ul>
+        </div>
+        <div class="soci">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+            <ul>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+                <ul>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ch_pwd.js"></script>
+    <script src="js/validate.js"></script>
+</body></html>
